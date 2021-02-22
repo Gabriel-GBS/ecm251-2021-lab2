@@ -3,8 +3,8 @@ Repositório criado para a diciplina Linguagens I.
 
 # Desenvolvedor:
 ## Gabriel Gomes Bermudi Santos
-
 # Linguagens e Frameworks:
 - Java
 - Python
 - C
+- Dart
