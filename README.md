@@ -7,4 +7,3 @@ Repositório criado para a diciplina Linguagens I.
 - Java
 - Python
 - C
-- Dart
