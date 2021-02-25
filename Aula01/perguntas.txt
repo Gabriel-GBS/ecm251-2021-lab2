@@ -1,0 +1,5 @@
+P1. onde está instalado o jdk?
+P2. qual o caminho completo até o java e o javac?
+P3. como compilamos um progrma em linha de comando?
+P4. como executamos esse programa?
+P5. 
