@@ -11,6 +11,21 @@ public class Sistema {
         while(executarSistema){
             exibirMenu();
             opcao = scanner.nextInt();
+            avaliarOpcao(opcao);
+
+        }
+    }
+
+    private void avaliarOpcao(int opcao) {
+        switch (opcao){
+            case 0:
+                System.out.println("Obrigado por utilizar o sistema");
+                this.executarSistema = false;
+                break;
+            default:
+                System.out.println("Opção ainda não implementada");
+                break;
+
         }
     }
 
@@ -28,10 +43,7 @@ public class Sistema {
         System.out.println("3 - Sacar Dinheiro");
         System.out.println("4 - Transferir Dinheiro");
         System.out.println("5 - Pagar conta (título)");
-        System.out.println("6 - Encerrar sistema");
-
-
-
+        System.out.println("0 - Encerrar sistema");
 
     }
 }

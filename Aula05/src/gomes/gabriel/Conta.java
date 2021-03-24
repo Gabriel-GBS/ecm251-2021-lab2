@@ -2,18 +2,22 @@ package gomes.gabriel;
 
 public class Conta {
     //1.Atributos
-    Cliente cliente;
-    int numero;
-    double saldo;
+    private Cliente cliente;
+    private int numero;
+    private double saldo;
 
     //2.Métodos
-    void vizualizarSaldo(){
-        double saldo = 50;
-        System.out.println("Valor do saldo: R$" + this.saldo);
-        //this = pega o valor da instancia
+    public Conta(Cliente cliente, int numero, double saldo) {
+        this.cliente = cliente;
+        this.numero = numero;
+        this.saldo = saldo;
     }
 
-    boolean sacar(double valor){
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    public boolean sacar(double valor){
         if(this.saldo >= valor){
         this.saldo -= valor;
         return true;
@@ -21,12 +25,12 @@ public class Conta {
         return false;
     }
 
-    void depositar(double valor){
+    public void depositar(double valor){
         //this.saldo = this.saldo + valor;
         this.saldo += valor;
     }
 
-    boolean transferirDinheiro(Conta destino, double valor){
+    public boolean transferirDinheiro(Conta destino, double valor){
         if(this.sacar(valor)){
             destino.depositar(valor);
             return true;
