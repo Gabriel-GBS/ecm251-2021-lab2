@@ -6,6 +6,7 @@ public class Cliente {
 
         public Cliente(String titular) {
             this.titular = titular;
+
         }
 
         @Override

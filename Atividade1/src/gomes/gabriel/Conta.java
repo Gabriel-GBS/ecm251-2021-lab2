@@ -1,6 +1,6 @@
 package gomes.gabriel;
 
-public class Conta {
+    public class Conta {
         //Atributos
         private Cliente cliente;
         private int numero;

@@ -61,11 +61,13 @@ public class Sistema {
         }
     }
 
+
     public Sistema() {
         this.executarSistema = true;
         this.scanner = new Scanner(System.in);  //Cria um scanner para o teclado (entrada padrão)
         this.conta = new Conta("Luigi", 1235, 1000);
     }
+
 
     private void exibirMenu() {
         System.out.println("Bem vindo ao MauaBank");
